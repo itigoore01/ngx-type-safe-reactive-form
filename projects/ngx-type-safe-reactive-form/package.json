@@ -1,8 +1,25 @@
 {
   "name": "ngx-type-safe-reactive-form",
   "version": "0.0.0-development",
+  "keywords": [
+    "angular"
+  ],
+  "author": {
+    "name": "itigoore01",
+    "email": "xyz.shotao@gmail.com",
+    "url": "https://github.com/itigoore01"
+  },
+  "homepage": "https://github.com/itigoore01/ngx-type-safe-reactive-form",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itigoore01/ngx-type-safe-reactive-form/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itigoore01/ngx-type-safe-reactive-form.git"
+  },
   "peerDependencies": {
-    "@angular/common": "^8.1.3",
-    "@angular/core": "^8.1.3"
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0"
   }
 }
