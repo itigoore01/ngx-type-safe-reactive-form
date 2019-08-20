@@ -30,12 +30,6 @@
       }
     ],
     [
-      "@semantic-release/github",
-      {
-        "assets": "dist/ngx-type-safe-reactive-form"
-      }
-    ],
-    [
       "@semantic-release/git",
       {
         "assets": [
