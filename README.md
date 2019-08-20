@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/itigoore01/ngx-type-safe-reactive-form.svg?branch=master)](https://travis-ci.org/itigoore01/ngx-type-safe-reactive-form)
+[![npm version](https://badge.fury.io/js/ngx-type-safe-reactive-form.svg)](https://badge.fury.io/js/ngx-type-safe-reactive-form)
 
 # NgxTypeSafeReactiveForm
 
