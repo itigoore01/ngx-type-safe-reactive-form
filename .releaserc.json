@@ -15,6 +15,13 @@
         "assets": "dist/ngx-type-safe-reactive-form"
       }
     ],
-    "@semantic-release/git"
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md"
+        ]
+      }
+    ]
   ]
 }
