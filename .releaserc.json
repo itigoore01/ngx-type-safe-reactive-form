@@ -3,7 +3,18 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/npm",
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/ngx-type-safe-reactive-form"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": "dist/ngx-type-safe-reactive-form"
+      }
+    ],
     "@semantic-release/git"
   ]
 }
