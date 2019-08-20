@@ -1,27 +1,38 @@
+[![Build Status](https://travis-ci.org/itigoore01/ngx-type-safe-reactive-form.svg?branch=master)](https://travis-ci.org/itigoore01/ngx-type-safe-reactive-form)
+
 # NgxTypeSafeReactiveForm
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+## Installation 
 
-## Development server
+```bash
+npm install --save ngx-type-safe-reactive-form
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Usage
 
-## Code scaffolding
+Same as the original *Reactive Forms*, but it has a type.  
+See [https://angular.io/guide/reactive-forms](https://angular.io/guide/reactive-forms)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```typescript
+import { TypeSafeFormBuilder } from 'ngx-type-safe-reactive-form';
 
-## Build
+@Component({
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+})
+export class FormComponent {
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  readonly form = this.formBuilder.group({
+    username: '',
+    password: '',
+    rememberMe: false,
+  });
 
-## Running unit tests
+  constructor(
+    private formBuilder: TypeSafeFormBuilder
+  ) { }
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+}
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[Live example](https://stackblitz.com/edit/ngx-type-safe-reactive-form-example)
