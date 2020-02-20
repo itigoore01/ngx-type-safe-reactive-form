@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/itigoore01/ngx-type-safe-reactive-form/compare/v1.0.3...v1.0.4) (2020-02-20)
+
+
+### Bug Fixes
+
+* Fixed a bug that CreateFormType infers wrong type. ([f795e22](https://github.com/itigoore01/ngx-type-safe-reactive-form/commit/f795e22))
+
 ## [1.0.3](https://github.com/itigoore01/ngx-type-safe-reactive-form/compare/v1.0.2...v1.0.3) (2020-02-20)
 
 
