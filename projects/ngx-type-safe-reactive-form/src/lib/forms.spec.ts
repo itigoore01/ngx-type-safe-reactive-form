@@ -107,12 +107,31 @@ describe('Form Builder', () => {
     const e = b.group({
       password: 'some value',
     });
+    const g = b.array([
+      b.group({
+        one: 'some value',
+        two: 'some value',
+      }),
+    ]);
     const a = b.group({
       c,
       e,
+      g,
     });
 
-    expect<{ c: { login: string; }; e: { password: string; }; }>(a.value).toEqual({ c: { login: 'some value'}, e: { password: 'some value' }});
+    // controlsが参照可能か、型定義確認のテスト
+    expect(a.controls.g.controls).toBeTruthy();
+
+    expect<{ c: { login: string; }; e: { password: string; }; g: { one: string; two: string; }[]; }>(a.value).toEqual({
+      c: { login: 'some value'},
+      e: { password: 'some value' },
+      g: [
+        {
+          one: 'some value',
+          two: 'some value',
+        }
+      ]
+    });
   });
 
   it('should create control arrays with multiple async validators', fakeAsync(() => {
