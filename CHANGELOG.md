@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/itigoore01/ngx-type-safe-reactive-form/compare/v1.0.4...v1.0.5) (2020-02-20)
+
+
+### Bug Fixes
+
+* Fix the type definition of FormArray method. ([0021a94](https://github.com/itigoore01/ngx-type-safe-reactive-form/commit/0021a94))
+
 ## [1.0.4](https://github.com/itigoore01/ngx-type-safe-reactive-form/compare/v1.0.3...v1.0.4) (2020-02-20)
 
 
