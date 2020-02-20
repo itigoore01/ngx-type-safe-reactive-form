@@ -98,6 +98,7 @@ export type TypedFormGroup<TControls extends { [key: string]: TypedAbstractContr
 
 export type CreateFormType<TConfig> =
   TConfig extends TypedFormControl<infer TValue> ? TypedFormControl<TValue> :
+  TConfig extends TypedFormGroup<infer TControls> ? TypedFormGroup<TControls> :
   TConfig extends TypedFormArray<infer TControl> ? TypedFormArray<TControl> :
   TConfig extends [infer TValue, any?, any?] ? TypedFormControl<TValue> :
   TConfig extends { value: infer TValue; disabled: boolean; } ? TypedFormControl<TValue> :

@@ -121,6 +121,7 @@ describe('Form Builder', () => {
 
     // controlsが参照可能か、型定義確認のテスト
     expect(a.controls.g.controls).toBeTruthy();
+    expect(a.controls.g.controls[0].controls).toBeTruthy();
 
     expect<{ c: { login: string; }; e: { password: string; }; g: { one: string; two: string; }[]; }>(a.value).toEqual({
       c: { login: 'some value'},
