@@ -74,7 +74,8 @@ export type TypedFormArray<TControl extends TypedAbstractControl<any>, TValue ex
   getRawValue(): TValue;
 
   at(index: number): TControl;
-  push(index: number, control: TControl): void;
+  insert(index: number, control: TControl): void;
+  push(control: TControl): void;
   setControl(index: number, control: TControl): void;
 }>;
 
